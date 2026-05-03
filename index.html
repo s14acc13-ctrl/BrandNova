@@ -1,189 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>brandNova - Business Boosting Agency</title>
+<title>brandNova - Home</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-background:#0b0b0f;
-color:white;
-scroll-behavior:smooth;
-}
+body{margin:0;font-family:Arial;background:#0b0b0f;color:white;}
+nav{display:flex;justify-content:space-between;padding:20px 50px;background:black;border-bottom:2px solid #a855f7;}
+nav a{color:white;margin:0 10px;text-decoration:none;}
+.logo{color:#a855f7;font-size:24px;font-weight:bold;}
 
-/* NAV */
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px 60px;
-background:black;
-border-bottom:2px solid #a855f7;
-position:sticky;
-top:0;
-}
+.hero{text-align:center;padding:120px 20px;}
+.hero h1{color:#a855f7;font-size:50px;}
+.btn{background:#a855f7;padding:12px 20px;color:white;text-decoration:none;border-radius:6px;}
 
-.logo{
-color:#a855f7;
-font-size:24px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-}
-
-/* HERO */
-.hero{
-text-align:center;
-padding:120px 20px;
-background:linear-gradient(#000,#12001f);
-}
-
-.hero h1{
-font-size:55px;
-color:#a855f7;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#a855f7;
-color:white;
-text-decoration:none;
-border-radius:6px;
-}
-
-/* SECTIONS */
-section{
-padding:80px 20px;
-text-align:center;
-}
-
-/* CARDS */
-.card-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.card{
-background:#15151c;
-border:1px solid #a855f7;
-padding:20px;
-width:250px;
-border-radius:10px;
-}
-
-/* HEADINGS */
-h2{
-color:#a855f7;
-}
-
-/* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 18px;
-border-radius:50px;
-color:white;
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50px;
 text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 10px rgba(0,0,0,0.5);
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-background:black;
-border-top:2px solid #a855f7;
-color:#888;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
 <div class="logo">brandNova</div>
 <div>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
 </div>
 </nav>
 
-<!-- HOME -->
-<section id="home" class="hero">
+<div class="hero">
 <h1>We Grow Your Business</h1>
-<p>Marketing • Branding • SEO • Business Growth</p>
-<a class="btn" href="#services">Explore Services</a>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About brandNova</h2>
-<p>
-We are a business boosting agency helping brands grow online using modern digital marketing strategies.
-We focus on real results, sales and brand growth.
-</p>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Facebook Ads</h3>
-<p>High converting ad campaigns</p>
+<p>Marketing • Branding • SEO • Growth</p>
+<br>
+<a class="btn" href="services.html">Our Services</a>
 </div>
 
-<div class="card">
-<h3>Instagram Marketing</h3>
-<p>Grow your audience fast</p>
-</div>
-
-<div class="card">
-<h3>SEO</h3>
-<p>Rank your business on Google</p>
-</div>
-
-<div class="card">
-<h3>Branding</h3>
-<p>Logo & identity design</p>
-</div>
-
-<div class="card">
-<h3>Business Growth</h3>
-<p>Complete strategy for scaling</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-© 2026 brandNova | All Rights Reserved
-</footer>
-
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/923114922067" target="_blank">
-📱 WhatsApp
-</a>
+<a class="whatsapp" href="https://wa.me/923114922067">📱 Chat</a>
 
 </body>
 </html>
