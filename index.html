@@ -2,122 +2,176 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>brandNova - Business Boosting Agency</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0d0d0d;
+    background: #0b0b0f;
     color: white;
 }
 
-/* Navbar */
-.navbar {
+/* NAV */
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 20px 60px;
     background: black;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #a855f7;
 }
 
 .logo {
-    font-size: 24px;
-    color: purple;
+    font-size: 26px;
+    color: #a855f7;
     font-weight: bold;
 }
 
-.navbar a {
+nav a {
     color: white;
-    text-decoration: none;
     margin-left: 20px;
+    text-decoration: none;
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
-    color: purple;
+    font-size: 55px;
+    color: #a855f7;
 }
 
 .hero p {
+    color: #bbb;
     font-size: 18px;
-    color: #ccc;
 }
 
 .btn {
-    padding: 12px 25px;
-    background: purple;
+    background: #a855f7;
     color: white;
+    padding: 12px 25px;
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
 }
 
-/* Services */
+/* SERVICES */
 .services {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 50px;
+    flex-wrap: wrap;
+    padding: 60px;
 }
 
 .card {
-    background: #1a1a1a;
-    padding: 20px;
+    background: #15151c;
+    padding: 25px;
     width: 250px;
-    border: 1px solid purple;
+    border: 1px solid #a855f7;
     text-align: center;
 }
 
-/* Footer */
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 60px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 60px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: black;
-    border-top: 2px solid purple;
-    color: #aaa;
+    border-top: 2px solid #a855f7;
+    color: #888;
 }
 </style>
 </head>
 
 <body>
 
-<div class="navbar">
+<nav>
     <div class="logo">brandNova</div>
     <div>
         <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
-</div>
+</nav>
 
-<div class="hero">
+<section class="hero">
     <h1>Grow Your Business with brandNova</h1>
-    <p>We help brands boost their online presence and sales through smart marketing strategies.</p>
-    <button class="btn">Get Started</button>
-</div>
+    <p>We help businesses scale with marketing, branding & growth strategies</p>
 
-<div class="services">
+    <!-- WHATSAPP BUTTON -->
+    <a class="btn"
+       href="https://wa.me/92XXXXXXXXXX"
+       target="_blank">
+       Contact on WhatsApp
+    </a>
+</section>
+
+<section id="services" class="services">
     <div class="card">
         <h3>Marketing</h3>
-        <p>Powerful digital marketing strategies for growth.</p>
+        <p>Advanced digital marketing strategies</p>
     </div>
 
     <div class="card">
         <h3>Branding</h3>
-        <p>We build strong and unique brand identities.</p>
+        <p>Strong brand identity creation</p>
     </div>
 
     <div class="card">
         <h3>Business Growth</h3>
-        <p>Scale your business with expert guidance.</p>
+        <p>Scale your business faster</p>
     </div>
-</div>
+</section>
+
+<section id="about" class="about">
+    <h2>About brandNova</h2>
+    <p>We are a professional business boosting agency helping companies grow online.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Click WhatsApp button below to talk directly</p>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp"
+   href="https://wa.me/03114922067"
+   target="_blank">
+   WhatsApp
+</a>
 
 <footer>
     © 2026 brandNova | All Rights Reserved
